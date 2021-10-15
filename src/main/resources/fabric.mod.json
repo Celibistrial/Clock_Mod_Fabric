@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "clock",
+  "version": "${version}",
+
+  "name": "Clock Mod",
+  "description": "Shows the time ",
+  "authors": [
+    "Celibistrial"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.clock.mod.client.clockClient"
+    ],
+    "main": [
+      "net.clock.mod.clock"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
