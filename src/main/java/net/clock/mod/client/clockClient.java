@@ -56,7 +56,7 @@ public class clockClient implements ClientModInitializer {
 
                 return 1;
             }));
-        ClientCommandManager.DISPATCHER.register(literal("Colour").then(ClientCommandManager.argument("ColourCode", integer(0, 100000)).executes(context -> {
+        ClientCommandManager.DISPATCHER.register(literal("Colour").then(ClientCommandManager.argument("ColourCode", integer(0, 90000000)).executes(context -> {
             colour = context.getArgument("ColourCode",Integer.class);
             jsonFile.write(x,y,colour);
             return 1;
