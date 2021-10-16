@@ -17,7 +17,7 @@ public class JsonFile {
         object.put("y",y);
         object.put("colour",colour);
         try (FileWriter file = new FileWriter("ClockMod.json")) {
-            //We can write any JSONArray or JSONObject instance to the file
+
             file.write(object.toJSONString());
             file.flush();
 
@@ -32,7 +32,7 @@ public class JsonFile {
         JSONParser jsonParser = new JSONParser();
         try (FileReader reader = new FileReader("ClockMod.json"))
         {
-            //Read JSON file
+
             JSONParser parser = new JSONParser();
             Object obj  = parser.parse(reader);
             JSONObject jsonObject = (JSONObject)obj;
@@ -46,7 +46,7 @@ public class JsonFile {
 
 
 
-            //Iterate over employee array
+
 
 
         } catch (FileNotFoundException e) {
